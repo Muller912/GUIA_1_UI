@@ -20,6 +20,12 @@ public class MayoriaDeEdadUI : MonoBehaviour
     }
 
     public void CheckLegalAge(){
-        txt_Resultado.text = "Aca va el resultado";
+
+        int userAge = int.Parse(input_IngresoEdad.text);
+        if(userAge < 18){
+             txt_Resultado.text = "No es mayor de edad";
+        } else {
+             txt_Resultado.text = "Es mayor";
+        }
     }
 }
