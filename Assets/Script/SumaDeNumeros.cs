@@ -28,5 +28,9 @@ string resultado = (num1 + num2).ToString();
 
 txt_Resultado.text = resultado;
 
+if (num1 < 0 || num2 < 0){
+    txt_Resultado.text = "Error, un numero es menor a 0";
+}
+
     }
 }
