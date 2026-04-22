@@ -773,7 +773,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 786437186}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1601837042}
+        m_MethodName: CheckLegalAge
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &786437186
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -884,7 +895,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1601837041}
-  - component: {fileID: 1601837040}
   - component: {fileID: 1601837042}
   m_Layer: 0
   m_Name: MAYORIADEEDADUI
@@ -893,18 +903,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1601837040
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1601837039}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5852cc4b4a85f4f4fa1d7d8b38eaef43, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!4 &1601837041
 Transform:
   m_ObjectHideFlags: 0
@@ -931,6 +929,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5852cc4b4a85f4f4fa1d7d8b38eaef43, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  input_IngresoEdad: {fileID: 2104880156}
+  txt_Resultado: {fileID: 2048462057}
 --- !u!1 &1916892966
 GameObject:
   m_ObjectHideFlags: 0
